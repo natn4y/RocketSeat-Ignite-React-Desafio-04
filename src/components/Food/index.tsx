@@ -22,7 +22,6 @@ type FoodProps = {
 export function Food({ food, handleEditFood, handleDelete }: FoodProps) {
   const { available } = food;
   const [isAvailable, setIsAvailable] = useState(available);
-  console.log(isAvailable);
   const toggleAvailable = async () => {
     await api.put(`/foods/${food.id}`, {
       ...food,
