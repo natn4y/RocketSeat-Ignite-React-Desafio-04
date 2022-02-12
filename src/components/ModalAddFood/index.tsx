@@ -37,7 +37,7 @@ export function ModalAddFood({
         <Input name="image" placeholder="Cole o link aqui" />
 
         <Input name="name" placeholder="Ex: Moda Italiana" />
-        <Input name="price" placeholder="Ex: 19.90" />
+        <Input type="number" step="0.01" name="price" placeholder="Ex: 19.90" />
 
         <Input name="description" placeholder="Descrição" />
         <button type="submit" data-testid="add-food-button">

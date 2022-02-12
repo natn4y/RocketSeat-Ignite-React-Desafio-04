@@ -9,6 +9,8 @@ type InputProps = {
   name: string;
   placeholder?: string;
   icon?: React.ComponentType<IconBaseProps>;
+  type?: string;
+  step?: string;
 };
 
 export function Input({ name, icon: Icon, ...rest }: InputProps) {
